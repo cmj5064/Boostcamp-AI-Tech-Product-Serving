@@ -34,7 +34,7 @@ poetry run python main.py
 ### Predict
 
 ```bash
-curl -X POST -F "file=@./example_images/0a101263343a4a60a8dcd94d1fc8e8e253dadf14.jpg" http://0.0.0.0:8000/predict
+curl -X POST -F "file=@./example_images/0a101263343a4a60a8dcd94d1fc8e8e253dadf14.jpg" http://localhost:8000/predict
  
 {"id":1,"result":4}%
 ```
@@ -42,7 +42,7 @@ curl -X POST -F "file=@./example_images/0a101263343a4a60a8dcd94d1fc8e8e253dadf14
 ### Get all predictions
 
 ```bash
-curl "http://0.0.0.0:8000/predict"
+curl "http://localhost:8000/predict"
 
 [{"id":1,"result":0},{"id":2,"result":4},{"id":3,"result":3}]
 ```
@@ -50,7 +50,7 @@ curl "http://0.0.0.0:8000/predict"
 ### Get a prediction
 
 ```bash
-curl "http://0.0.0.0:8000/predict/1"
+curl "http://localhost:8000/predict/1"
 {"id":1,"result":0}
 ```
 
