@@ -1,3 +1,4 @@
+# 구현 네번째! schema 작성 (PredictionRequest, PredictionResponse)
 from pydantic import BaseModel
 
 class PredictionRequest(BaseModel):
